@@ -1,11 +1,12 @@
 .charts-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
 }
 
 .chart-container {
-    width: 40rem;
+    width: 45rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;

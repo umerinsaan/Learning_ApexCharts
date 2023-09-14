@@ -2,6 +2,8 @@ import { Component, ViewChild, numberAttribute } from '@angular/core';
 import { PieChart } from 'src/app/chartsClasses/PieChart';
 import { StackedColumnChart } from 'src/app/chartsClasses/StackedColumnChart';
 import { ApexChart, ChartComponent } from 'ng-apexcharts';
+import { MonthsChart } from 'src/app/chartsClasses/MonthsChart';
+import { YearsChart } from 'src/app/chartsClasses/YearsChart';
 
 @Component({
   selector: 'app-charts',
@@ -14,6 +16,9 @@ export class ChartsComponent {
 
   pieChart = new PieChart();
   @ViewChild('PieChart') PIE_CHART: any;
+
+  monthsChart = new MonthsChart();
+  yearsChart = new YearsChart();
 
 
 

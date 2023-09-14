@@ -1,14 +1,31 @@
 <div class="charts-container">
-    <div class="chart-container">
-        <apx-chart [series]="stackedColumnChart.series" [chart]="stackedColumnChart.chart"
-            [plotOptions]="stackedColumnChart.plotOptions" [xaxis]="stackedColumnChart.xaxis"
-            [yaxis]="stackedColumnChart.yaxis" [legend]="stackedColumnChart.legend" #StackedColumnChart></apx-chart>
-        <button (click)="updateStackedColumnChartData()">Click To Randomize</button>
+    <div class="wrapper">
+        <div class="chart-container">
+            <apx-chart [series]="stackedColumnChart.series" [chart]="stackedColumnChart.chart"
+                [plotOptions]="stackedColumnChart.plotOptions" [xaxis]="stackedColumnChart.xaxis"
+                [yaxis]="stackedColumnChart.yaxis" [legend]="stackedColumnChart.legend" #StackedColumnChart></apx-chart>
+            <button (click)="updateStackedColumnChartData()" class="randomize-btn">Click To Randomize</button>
+        </div>
     </div>
 
-    <div class="chart-container">
-        <apx-chart [series]="pieChart.series" [chart]="pieChart.chart" [labels]="pieChart.labels"
-            [dataLabels]="pieChart.options" #PieChart></apx-chart>
-        <button (click)="updatePieChartData()">Click To Randomize</button>
+    <div class="wrapper">
+        <div class="chart-container">
+            <apx-chart [series]="pieChart.series" [chart]="pieChart.chart" [labels]="pieChart.labels"
+                [dataLabels]="pieChart.options" #PieChart></apx-chart>
+            <button (click)="updatePieChartData()" class="randomize-btn">Click To Randomize</button>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="chart-container">
+            <apx-chart [series]="monthsChart.series" [chart]="monthsChart.chart" [colors]="monthsChart.colors"
+                [xaxis]="monthsChart.xaxis" [yaxis]="monthsChart.yaxis" [stroke]="monthsChart.stroke"
+                [fill]="monthsChart.fill" [dataLabels]="monthsChart.dataLabels"></apx-chart>
+        </div>
+        <div class="chart-container">
+            <apx-chart [series]="yearsChart.series" [chart]="yearsChart.chart" [colors]="yearsChart.colors"
+                [xaxis]="yearsChart.xaxis" [stroke]="yearsChart.stroke" [fill]="yearsChart.fill"
+                [dataLabels]="yearsChart.dataLabels"></apx-chart>
+        </div>
     </div>
 </div>

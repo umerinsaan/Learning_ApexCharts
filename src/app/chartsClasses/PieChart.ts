@@ -18,9 +18,7 @@ export class PieChart {
 
     public options: ApexDataLabels = {
         style: {
-            colors: ['#F44336', '#E91E63', '#9C27B0']
+            fontSize: '20px'
         }
-
-        
     }
 }

@@ -7,6 +7,8 @@
     </div>
 
     <div class="chart-container">
-        <apx-chart [series]="pieChart.series" [chart]="pieChart.chart" [labels]="pieChart.labels" [dataLabels]="pieChart.options"></apx-chart>
+        <apx-chart [series]="pieChart.series" [chart]="pieChart.chart" [labels]="pieChart.labels"
+            [dataLabels]="pieChart.options" #PieChart></apx-chart>
+        <button (click)="updatePieChartData()">Click To Randomize</button>
     </div>
 </div>

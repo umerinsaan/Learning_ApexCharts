@@ -1,0 +1,15 @@
+.charts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-container {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 14px;
+}
